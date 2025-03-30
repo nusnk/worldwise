@@ -13,8 +13,6 @@ export default function CountryList({ cities, isLoading }) {
     return acc;
   }, {}));
 
-  console.log(cities);
-
   return (
     <ul className={styles.countryList}>
       {countries.map(country => <CountryItem country={country}/>)}
