@@ -3,20 +3,33 @@ import styles from "./Map.module.css";
 import { MapContainer, Marker, Popup, TileLayer, useMap, useMapEvents } from "react-leaflet";
 import { useEffect, useState } from "react";
 import { useCities } from "../contexts/CitiesContext";
+import { useGeolocation } from "../hooks/useGeolocation";
+import Button from "./Button";
 
 export default function Map() {
   
   const [mapPosition, setMapPosition] = useState([40, 0]);
   const { cities } = useCities();
+  const { isLoading: isLoadingPosition, position: geolocationPosition, getPosition } = useGeolocation(mapPosition);
   const [searchParams] = useSearchParams();
   const lat = searchParams.get("lat");
   const lng = searchParams.get("lng");
   useEffect(function() {
     if (!lat || !lng) return;
-    setMapPosition([lat || 40, lng || 0]);
-  }, [lat, lng])
+    setMapPosition([lat, lng]);
+  }, [lat, lng]);
+
+  useEffect(function() {
+    if(!geolocationPosition) return;
+    setMapPosition([geolocationPosition.lat, geolocationPosition.lng]);
+  }, [geolocationPosition]);
   return (
     <div className={styles.mapContainer} >
+      {!geolocationPosition && (
+        <Button type="position" onClick={getPosition}>
+          {isLoadingPosition ? "Loading...": "Use your position"}
+        </Button>
+      )}
       <MapContainer zoom={13} scrollWheelZoom={true} className={styles.map}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
