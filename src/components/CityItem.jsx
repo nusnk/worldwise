@@ -17,6 +17,7 @@ export default function CityItem({ city }) {
     e.preventDefault();
     deleteCity(id);
   }
+
   return (
     <li>
       <Link className={`${styles.cityItem} ${id === currentCity.id ? styles['cityItem--active'] : ''}`} to={`${id}?lat=${position.lat}&lng=${position.lng}`}>
