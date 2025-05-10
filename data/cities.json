@@ -47,54 +47,6 @@
         "lat": "42.374778361114195",
         "lng": "1.2304687500000002"
       }
-    },
-    {
-      "id": "a5a7",
-      "cityName": "Saint-Aout",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2025-05-04T14:54:17.374Z",
-      "notes": "Test2",
-      "position": {
-        "lat": "46.70973594407157",
-        "lng": "1.9116210937500002"
-      }
-    },
-    {
-      "id": "685a",
-      "cityName": "Arth",
-      "country": "Switzerland",
-      "emoji": "🇨🇭",
-      "date": "2025-05-04T14:56:44.351Z",
-      "notes": "test",
-      "position": {
-        "lat": "47.07012182383309",
-        "lng": "8.569335937500002"
-      }
-    },
-    {
-      "id": "a620",
-      "cityName": "Bad Langensalza",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2025-05-04T14:57:55.885Z",
-      "notes": "test",
-      "position": {
-        "lat": "51.12421275782688",
-        "lng": "10.744628906250002"
-      }
-    },
-    {
-      "id": "1e7e",
-      "cityName": "Bremen",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2025-05-04T14:58:47.515Z",
-      "notes": "test",
-      "position": {
-        "lat": "53.08082737207479",
-        "lng": "8.876953125000002"
-      }
     }
   ]
 }
