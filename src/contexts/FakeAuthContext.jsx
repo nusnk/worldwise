@@ -18,7 +18,6 @@ function reducer(state, action) {
   }
 }
 
-
 const FAKE_USER = {
   name: "Jack",
   email: "jack@example.com",
@@ -59,3 +58,5 @@ function useAuth() {
   
   return context;
 }
+
+export { useAuth, AuthProvider }
