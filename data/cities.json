@@ -47,6 +47,42 @@
         "lat": "55.91227293006361",
         "lng": "13.205566406250002"
       }
+    },
+    {
+      "id": "6fd4",
+      "cityName": "Kashira",
+      "country": "Russian Federation (the)",
+      "emoji": "🇷🇺",
+      "date": "2025-05-24T07:18:04.558Z",
+      "notes": "",
+      "position": {
+        "lat": "54.813348417419284",
+        "lng": "38.08959960937501"
+      }
+    },
+    {
+      "id": "ffdd",
+      "cityName": "Aqmol",
+      "country": "Kazakhstan",
+      "emoji": "🇰🇿",
+      "date": "2025-05-24T07:18:15.909Z",
+      "notes": "здесь круто",
+      "position": {
+        "lat": "51.055207338584964",
+        "lng": "71.58691406250001"
+      }
+    },
+    {
+      "id": "54b9",
+      "cityName": "Shymkent",
+      "country": "Kazakhstan",
+      "emoji": "🇰🇿",
+      "date": "2025-05-24T07:20:02.509Z",
+      "notes": "Very nice",
+      "position": {
+        "lat": "42.31286205312125",
+        "lng": "69.5922088623047"
+      }
     }
   ]
 }
